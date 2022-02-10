@@ -165,6 +165,7 @@ public class BlockDAO {
 			Identifier dimension_id,
 			Instant date
 	) {
+		if(player_id == null) return null;
 		return new QueueOperation() {
 			public int getPriority() {
 				return 2;
